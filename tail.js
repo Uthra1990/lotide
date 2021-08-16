@@ -21,3 +21,4 @@ let tail = function(arr) {
   assertEqual(tail([6]), []);
   assertEqual(tail([]), "Hello");
   
+  module.exports = tail;
