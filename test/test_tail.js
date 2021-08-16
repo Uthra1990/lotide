@@ -1,19 +1,16 @@
-const tail = require('../tail');
-const assertArraysEqual = require('../assertArraysEqual.js');
+const { assert } = require("chai");
+const tail = require("../tail");
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-
-describe("#tail", function()
-{
-    
-    it("should return last array in index", () =>{
-        assertArraysEqual(tail(["Yo Yo", "Lighthouse", "Labs"]), "Lighthouse,Labs");
-    })
-    it("original array is unmodified", () => {
-
-        
-        
-        assertArraysEqual(tail(words), ["Yo Yo", "Lighthouse", "Labs"]);
-        
-    })
-})
+describe("#tail", () => {
+  const words = ["Yo Yo", "Lighthouse", "Labs"];
+  it("returns 3 for words.length", () => {
+      console.log(words.length)
+    assert.strictEqual((words.length), 3);
+  });
+  it("returns 2 for tail(words).length", () => {
+    assert.strictEqual(tail(words).length, 2);
+  });
+  it("returns ['Labs'] for tail(words)", () => {
+    assert.deepEqual(tail(words), [ 'Labs']);
+  });
+});
