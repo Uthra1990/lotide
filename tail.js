@@ -16,9 +16,9 @@ let tail = function(arr) {
         return tempArr
     }
   }
-  assertEqual(tail([5,6,7]),[6,7]);
-  assertEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse","Labs"]);
-  assertEqual(tail([6]), []);
-  assertEqual(tail([]), "Hello");
+   /*assertEqual(tail([5,6,7]),[6,7]);
+   assertEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse","Labs"]);
+   assertEqual(tail([6]), []);
+   assertEqual(tail([]), "Hello");*/
   
   module.exports = tail;
