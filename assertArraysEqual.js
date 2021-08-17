@@ -17,7 +17,7 @@ function checkArrays( arrA, arrB ){
   
 let assertArraysEqual = function(arr1,arr2){   
     var flag = checkArrays(arr1, arr2)
-    console.log(flag)
+    // console.log(flag)
     if(flag == true){
         console.log('Assertion Passed:' + arr1 + ' === ' + arr2);
     }else{
@@ -26,7 +26,9 @@ let assertArraysEqual = function(arr1,arr2){
 }
 
 
-assertArraysEqual([1, 2, 3], [1, 2, 3])
-assertArraysEqual([3, 2, 1], [1, 2, 3])
-assertArraysEqual(["1", "2", "3"], ["1", "2", "3"])
-assertArraysEqual(["1", "2", "3"], ["1", "2", 4])
+// assertArraysEqual([1, 2, 3], [1, 2, 3])
+// assertArraysEqual([3, 2, 1], [1, 2, 3])
+// assertArraysEqual(["1", "2", "3"], ["1", "2", "3"])
+// assertArraysEqual(["1", "2", "3"], ["1", "2", 4])
+
+module.exports = assertArraysEqual;

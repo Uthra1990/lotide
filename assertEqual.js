@@ -7,8 +7,8 @@ const assertEqual = function(actual, expected) {
 };
 
 // TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1,1);
+// assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual(1,1);
 /* if(assertEqual === true)
 {
     console.log( Assertion Passed: ["Lighthouse labs"] === ["Bootcamp"])
@@ -17,3 +17,5 @@ else
 {
     console.log(Assertion Failed: ["Lighthouse labs"] !== ["Bootcamp"])
 }  */
+
+module.exports = assertEqual;
