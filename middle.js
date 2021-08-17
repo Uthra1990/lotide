@@ -17,13 +17,13 @@
   }
   
   
-  const assertEqual = function(actual, expected) {
-      if (expected === actual) {
-        console.log('Assertion Passed:' + actual + ' === ' + expected);
-      } else {
-        console.log('Assertion Failed: ' + actual + ' !== ' + expected);
-      }
-    }; 
+  // const assertEqual = function(actual, expected) {
+  //     if (expected === actual) {
+  //       console.log('Assertion Passed:' + actual + ' === ' + expected);
+  //     } else {
+  //       console.log('Assertion Failed: ' + actual + ' !== ' + expected);
+  //     }
+  //   }; 
 
 
 const middle = function(array) {
@@ -44,6 +44,8 @@ const middle = function(array) {
 }
 
 
-const arr = [1,2,8,4,5,7,9,10];
-console.log(" The middle element is " + middle(arr));
-//middle(arr)
+ const arr = [1,2,8,4,5,7,9,10];
+  console.log(" The middle element is " + middle(arr));
+middle(arr)
+
+module.exports = middle;
